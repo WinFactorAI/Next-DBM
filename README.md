@@ -1,92 +1,104 @@
-# Next-FileFlow-push
+# Next-FileFlow
+
+## 开始
+
+​企业轻量级内外网文件审计系统是一款专为现代化办公场景设计的综合性文件安全管理平台，全面覆盖文件传输、存储、审计及权限管控全流程。系统深度融合智能化技术与企业级安全规范，助力企业实现高效合规的文件流转与管理。
+
+## 项目名称
+Next-FileFlow ​企业轻量级内外网文件审计系统
+
+## 项目描述
+项目介绍
+
+1.全流程审批管理​  
+​人工+自动双模审批​：支持基于角色、部门的多级审批流程定制，可设置文件类型、大小等触发条件实现规则化自动审批  
+​审批留痕追溯​：完整记录审批意见、操作人员及时间节点，审计日志符合ISO27001标准 
+
+​2.大文件高效传输​  
+​智能分片续传​：支持TB级文件断点续传，网络波动自动重试，传输稳定性达99.99%  
+​带宽动态调控​：根据业务优先级智能分配传输资源，关键业务带宽保障 
+
+​3.物理介质管控​  
+​光驱刻录审计​：记录光盘刻录内容、操作人员及设备信息，支持刻录前敏感内容扫描  
+​USB设备鉴权​：对接加密U盾体系，非授权外设自动阻断并告警
+
+​4.安全内网云盘​  
+​跨网闸同步​：通过安全摆渡机制实现内外网文件受控交换  
+​版本管理​：文件历史版本保留及差异对比，支持128位AES静态加密 
 
 
+​5.智能内容审计​  
+​多维度扫描引擎​：内置多种文件格式解析能力  
+​敏感规则库​：预置金融、法律、医疗等行业特征规则，支持正则表达式自定义  
+​AI增强分析​：支持 deepseek 内网独立部署接口 基于NLP的上下文语义识别，误报率低于0.5% 
 
-## Getting started
+​6.敏感规则与AI大模型调试训练  
+​大模型行为预测​：通过Transformer架构分析用户操作模式，实时预警异常文件流转  
+​智能分类标签​：自动生成文件密级标签，准确率超95%  
+支持自定义敏感规则，可以调教验证敏感规则与AI模型符合程度。 
 
-To make it easy for you to get started with GitLab, here's a list of recommended next steps.
+​7.实时态势感知​  
+​多级告警通知​：邮件通道分级告警  
+​可视化仪表盘​：实时展示全网文件流转热力图与风险事件分布 
 
-Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
+​8.统一身份管理​  
+​LDAP/AD深度集成​：同步组织架构与职务属性，权限变更实时生效  
+​RBAC权限模型​：细粒度控制到文件级访问、编辑、分享权限 
 
-## Add your files
+​9.移动安全接入​  
+​零信任移动端​：国密算法加密通道，兼容iOS/Android原生文件沙箱管控  
+​水印溯源​：移动端查阅自动添加动态用户IP使用时段与上传下载访问控制。 
 
-- [ ] [Create](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
-- [ ] [Add files using the command line](https://docs.gitlab.com/ee/gitlab-basics/add-file.html#add-a-file-using-the-command-line) or push an existing Git repository with the following command:
+​10.网络层防护​  
+​IP黑白名单​：支持CIDR格式网段控制，精确到端口级的访问策略 
+​GeoIP过滤​：自动阻断高风险地域IP访问请求 
+ 
+​11.智能运维体系​ 
+​自动化基线核查​：每日执行安全配置合规性检查并生成修复建议  
+​智能容量预测​：基于LSTM算法预判存储资源使用趋势
 
-```
-cd existing_repo
-git remote add origin http://gitlab.chusentech.com/chusen/next-fileflow-push.git
-git branch -M main
-git push -uf origin main
-```
 
-## Integrate with your tools
+## 徽章标识
+无
 
-- [ ] [Set up project integrations](http://gitlab.chusentech.com/chusen/next-fileflow-push/-/settings/integrations)
+## 视觉示例
+![1](./img/1.png "点击返回首页")
+![2](./img/2.png "点击返回首页")
+![3](./img/3.png "点击返回首页")
+![4](./img/4.png "点击返回首页")
 
-## Collaborate with your team
+## 安装指南
+内网独立安装部署请微信扫码知识星球持续完善中。
 
-- [ ] [Invite team members and collaborators](https://docs.gitlab.com/ee/user/project/members/)
-- [ ] [Create a new merge request](https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)
-- [ ] [Automatically close issues from merge requests](https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically)
-- [ ] [Enable merge request approvals](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/)
-- [ ] [Automatically merge when pipeline succeeds](https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html)
+![1](./img/kcode.png "点击返回首页")
 
-## Test and Deploy
+## 使用示例
+无
 
-Use the built-in continuous integration in GitLab.
+## 支持渠道
+提供社区支持
 
-- [ ] [Get started with GitLab CI/CD](https://docs.gitlab.com/ee/ci/quick_start/index.html)
-- [ ] [Analyze your code for known vulnerabilities with Static Application Security Testing(SAST)](https://docs.gitlab.com/ee/user/application_security/sast/)
-- [ ] [Deploy to Kubernetes, Amazon EC2, or Amazon ECS using Auto Deploy](https://docs.gitlab.com/ee/topics/autodevops/requirements.html)
-- [ ] [Use pull-based deployments for improved Kubernetes management](https://docs.gitlab.com/ee/user/clusters/agent/)
-- [ ] [Set up protected environments](https://docs.gitlab.com/ee/ci/environments/protected_environments.html)
+微信群支持
 
-***
+邮件: business@aiputing.com
 
-# Editing this README
+## 发展路线
 
-When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!). Thank you to [makeareadme.com](https://www.makeareadme.com/) for this template.
 
-## Suggestions for a good README
-Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
+## 下载地址
+下载地址:https://f.aiputing.com/?p=Next-FileFlow%2F
 
-## Name
-Choose a self-explaining name for your project.
 
-## Description
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
-
-## Badges
-On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
-
-## Visuals
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
-
-## Installation
-Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
-
-## Usage
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
-
-## Support
-Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
-
-## Roadmap
-If you have ideas for releases in the future, it is a good idea to list them in the README.
-
-## Contributing
-State if you are open to contributions and what your requirements are for accepting them.
-
-For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
-
-You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
-
-## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
+## 致谢名单
+ 
 
 ## License
-For open source projects, say how it is licensed.
+保留版权
 
-## Project status
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
+版权: 北京胜利因子科技有限公司
+
+官网: https://license.aiputing.com
+## 项目状态
+交付发布
+
+
