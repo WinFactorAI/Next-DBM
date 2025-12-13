@@ -1,101 +1,103 @@
-# Next-DBM
-
-## 开始
-
-企业轻量级数据库审计版本管理系统
-Next DBM 支持数据库连接日志审计，代理权限统一管理。
-支持数据版本管理。支持数据库脚本自动构建部署实施。
-支持WEB操作数据库基本管理功能。
-
-## 项目名称
-Next-DBM 企业轻量级数据库审计版本管理系统
-
-## 免费体验公测
-扫码进QQ群体验
-![1](./img/qq-next-dbm.jpg "点击返回首页")
 
 
-## 项目描述
-项目介绍
+# Next-DBM Database Audit System
 
-1.支持多种数据库连接​  
-支持多种数据代理连接，可以使用常用dBMS进行连接，支持MySQL、MariaDB、Oracle、SQLServer、PostgreSQL、MongoDB、Redis、MSSQL、MongoDB、客户端连接Next-DBM代理端口实
+[English](README.md) ｜ [中文](README_zh.md)
 
-​2.支持WEB与代理服务  
-可以通过WEB操作数据库基本管理功能， 
-使用代理TCP连接，支持连接状态查看命令查看进行审计管理。
+Next-DBM is a lightweight enterprise database audit and version management system.  
+It supports database connection log auditing, unified proxy permission management, data versioning, automated database script deployment, and basic database management through a web interface.
 
-​3.支持版本管理  
-通过将SQL语句保存SQL文件进行git版本管理。将关键核心表结构与数据通过版本服务器的方式管理起来。
+## Project Description
 
-​4.支持构建恢复数据库  
-可以在历史版本中恢复数据库。支持恢复新数据库与原库数据库进行恢复。
+Next-DBM solves challenges in iterative database development, including audit management, version control, automated script deployment, and basic database management via the web.
+:::info{title=Demo Link}
+Demo: <a href="http://nddemo.aiputing.com/#/login" target="_blank" rel="noopener noreferrer">Click to try</a><br/>
+<img src="https://www.aiputing.com/assets/img/winFactor.jpg" width="200" style="border: 0px;">
+<br/>
+Follow our official WeChat account and reply with "nd" to receive a demo account.<br/>
+:::
+![Logo](https://f.aiputing.com/raw/static/Next-DBM/dev.png)
 
-​5.敏感指令过滤  
-支持自定义敏感规则，敏感规则组实现账号或用户组根据不同情况配置控制敏感指令。
+### 1. Multiple Databases  
+Supports connecting to multiple types of databases using the proxy. Compatible with MySQL, MariaDB, Oracle, SQLServer, PostgreSQL, MongoDB, Redis, and more.
 
-​6.出发指令版本构建  
-支持配置触发指令实现版本备份管理。如可以配置alter、insert、update、delete指令实现版本控制。
+### 2. Web Management  
+Manage databases through the web interface.  
+Supports TCP proxy connections, connection status monitoring, and audit management commands.
 
-​7.支持自主表结构与表数据版本控制   
-支持版本按表结构与数据过滤实现版本备份管理历史版本管理功能。
+![Logo](https://f.aiputing.com/raw/static/Next-DBM/agent.png)
 
-​8.统一身份管理​    
-​LDAP/AD深度集成​：同步组织架构与职务属性，权限变更实时生效  
-​RBAC权限模型​：细粒度控制到文件级访问、编辑、分享权限 
+### 3. Database Version Management <Badge type="success">Core</Badge>    
+Save SQL statements as files and manage them via Git. Key table structures and data are version-controlled on the server.
 
-9.代理服务管理   
-支持按不同数据库常用端口分别控制管理
- 
-10.更多设置功能  
-国际化多语言支持，主题切换
- 
-## 徽章标识
-无
+### 4. Database Synchronization <Badge type="success">Core</Badge>    
+Restore databases from historical versions. Supports restoring to new or existing databases.
 
-## 视觉示例
-![1](./img/1.png "点击返回首页")
-![2](./img/2.png "点击返回首页")
-![3](./img/3.png "点击返回首页")
-![4](./img/4.png "点击返回首页")
-![3](./img/5.png "点击返回首页")
-![4](./img/6.png "点击返回首页")
-![3](./img/7.png "点击返回首页")
-![4](./img/8.png "点击返回首页")
+### 5. Sensitive Command Filtering <Badge type="warning">Highlight</Badge>    
+Define custom sensitive rules to control commands per user or group.
 
-## 安装指南
-内网独立安装部署请微信扫码知识星球持续完善中。
+### 6. Command Version Build <Badge type="warning">Highlight</Badge>    
+Trigger commands to manage version backups, e.g., ALTER, INSERT, UPDATE, DELETE commands.
 
-![1](./img/kcode.png "点击返回首页")
+### 7. Historical Version Control <Badge type="warning">Highlight</Badge>     
+Filter versions by table structure and data to manage historical backups.
 
-## 使用示例
-无
+### 8. Unified Identity Management <Badge type="success">Core</Badge>   
+LDAP/AD integration: synchronize organizational structure and roles.  
+RBAC permissions: fine-grained control at file-level, edit, and sharing permissions.
 
-## 支持渠道
-提供社区支持
+### 9. Proxy Service Management <Badge type="success">Core</Badge>   
+Control and manage proxies for different database ports.
 
-微信群支持
+### 10. Push Notifications <Badge type="warning">Highlight</Badge>
+Supports webhook notifications for database assets, disconnections, and user-asset relationship triggers.  
+Compatible with DingTalk, WeChat Work, Feishu, and other platforms.
 
-邮件: business@aiputing.com
+### 11. Log Auditing <Badge type="success">Core</Badge>
+Audit database connection logs and user-asset interactions.  
+Supports full SQL execution logging and status auditing.
 
-## 发展路线
+### 12. Data Permission Management <Badge type="success">Core</Badge>
+Manage data permissions based on user-asset relationships.
 
+### 13. Connection Monitoring <Badge type="success">Core</Badge>
+Monitor connections per user-asset relationship. Track user actions on assets.
 
-## 下载地址
-下载地址:https://f.aiputing.com/?p=Next-DBM%2F
+### 14. Additional Features <Badge>Basic</Badge>  
+Multi-language support, theme switching, default Chinese and English support, and custom language import.  
+Log cleaning cycles.  
+System backup and restore settings.
 
+## Interface Screenshots
 
-## 致谢名单
- 
+![Logo](https://f.aiputing.com/raw/static/Next-DBM/1.png)  
+![Logo](https://f.aiputing.com/raw/static/Next-DBM/2.png)  
+![Logo](https://f.aiputing.com/raw/static/Next-DBM/3.png)  
+![Logo](https://f.aiputing.com/raw/static/Next-DBM/4.png)  
+![Logo](https://f.aiputing.com/raw/static/Next-DBM/5.png)  
+![Logo](https://f.aiputing.com/raw/static/Next-DBM/6.png)  
+![Logo](https://f.aiputing.com/raw/static/Next-DBM/7.png)  
+![Logo](https://f.aiputing.com/raw/static/Next-DBM/8.png)
+
+## Support Channels
+
+QQ Group: <br/>
+<img src="https://license.aiputing.com/static/media/qq-next-dbm.452f09681876a5433557.jpg" width="30%" style="border: 0px;">
+
+Email: business@aiputing.com
+
+## Download Link
+
+Download: <a href="https://f.aiputing.com/?p=Next-DBM%2F" target="_blank" rel="noopener noreferrer">f.aiputing.com/?p=Next-DBM%2F</a>
 
 ## License
-保留版权
 
-版权: 北京胜利因子科技有限公司
+All rights reserved  
 
-官网: https://license.aiputing.com
-## 项目状态
-交付发布
+Copyright: Beijing Shengli Yinzi Technology Co., Ltd.  
 
+Website: <a href="https://license.aiputing.com" target="_blank" rel="noopener noreferrer">license.aiputing.com</a>  
 
-This is an automated change - 2025-12-13 07:34:20
+## Project Status
+
+ReleasedThis is an automated change - 2025-12-13 16:16:29
