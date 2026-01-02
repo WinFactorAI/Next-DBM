@@ -71,6 +71,11 @@ System backup and restore settings.
 ## Interface Screenshots
 
 ![Logo](https://f.aiputing.com/raw/static/Next-DBM/1.png)  
+
+![Logo](https://f.aiputing.com/raw/static/Next-DBM/5.1.png) 
+![Logo](https://f.aiputing.com/raw/static/Next-DBM/5.2.png) 
+![Logo](https://f.aiputing.com/raw/static/Next-DBM/5.3.png) 
+![Logo](https://f.aiputing.com/raw/static/Next-DBM/5.4.png) 
 ![Logo](https://f.aiputing.com/raw/static/Next-DBM/2.png)  
 ![Logo](https://f.aiputing.com/raw/static/Next-DBM/3.png)  
 ![Logo](https://f.aiputing.com/raw/static/Next-DBM/4.png)  
