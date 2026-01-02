@@ -12,11 +12,6 @@ Next DBM 支持数据库连接日志审计，代理权限统一管理。
 ## 项目名称
 Next-DBM 企业轻量级数据库审计版本管理系统
 
-## 免费体验公测
-扫码进QQ群体验
-![1](./img/qq-next-dbm.jpg "点击返回首页")
-
-
 ## 项目描述
 项目介绍
 
@@ -57,6 +52,10 @@ Next-DBM 企业轻量级数据库审计版本管理系统
 
 ## 视觉示例
 ![1](./img/1.png "点击返回首页")
+![Logo](https://f.aiputing.com/raw/static/Next-DBM/5.1.png) 
+![Logo](https://f.aiputing.com/raw/static/Next-DBM/5.2.png) 
+![Logo](https://f.aiputing.com/raw/static/Next-DBM/5.3.png) 
+![Logo](https://f.aiputing.com/raw/static/Next-DBM/5.4.png) 
 ![2](./img/2.png "点击返回首页")
 ![3](./img/3.png "点击返回首页")
 ![4](./img/4.png "点击返回首页")
