@@ -77,6 +77,10 @@ Next-DBM 企业轻量级数据库审计版本管理系统
 
 微信群支持
 
+<img src="./img/weixinq-1.jpg" width="30%" style="border: 0px;">
+
+
+
 邮件: business@aiputing.com
 
 ## 发展路线

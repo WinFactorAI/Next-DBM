@@ -86,8 +86,10 @@ System backup and restore settings.
 
 ## Support Channels
 
-QQ Group: <br/>
-<img src="https://license.aiputing.com/static/media/qq-next-dbm.452f09681876a5433557.jpg" width="30%" style="border: 0px;">
+WeChat Group: <br/>
+<img src="./img/weixinq-1.jpg" width="30%" style="border: 0px;">
+<!-- QQ Group: <br/>
+<img src="https://license.aiputing.com/static/media/qq-next-dbm.452f09681876a5433557.jpg" width="30%" style="border: 0px;"> -->
 
 Email: business@aiputing.com
 
@@ -105,4 +107,4 @@ Website: <a href="https://license.aiputing.com" target="_blank" rel="noopener no
 
 ## Project Status
 
-ReleasedThis is an automated change - 2026-01-03 07:33:46
+ReleasedThis is an automated change - 2026-01-04 11:27:13
