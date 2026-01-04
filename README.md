@@ -85,9 +85,10 @@ System backup and restore settings.
 ![Logo](https://f.aiputing.com/raw/static/Next-DBM/8.png)
 
 ## Support Channels
-
-QQ Group: <br/>
-<img src="https://license.aiputing.com/static/media/qq-next-dbm.452f09681876a5433557.jpg" width="30%" style="border: 0px;">
+WeChat Group: <br/>
+<img src="./img/weixinq-1.jpg" width="30%" style="border: 0px;">
+<!-- QQ Group: <br/>
+<img src="https://license.aiputing.com/static/media/qq-next-dbm.452f09681876a5433557.jpg" width="30%" style="border: 0px;"> -->
 
 Email: business@aiputing.com
 
