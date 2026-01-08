@@ -79,8 +79,6 @@ Next-DBM 企业轻量级数据库审计版本管理系统
 
 <img src="./img/weixinq-1.jpg" width="30%" style="border: 0px;">
 
-
-
 邮件: business@aiputing.com
 
 ## 发展路线
@@ -89,17 +87,21 @@ Next-DBM 企业轻量级数据库审计版本管理系统
 ## 下载地址
 下载地址:https://f.aiputing.com/?p=Next-DBM%2F
 
-
-## 致谢名单
- 
+## 协议与条款
+如您需要在企业网络中使用 Next-DBM，建议先征求 IT 管理员的同意。下载、使用或分发 Next-DBM 前，您必须同意 协议 条款与限制。本项目不提供任何担保，亦不承担任何责任。
 
 ## License
-保留版权
-
-版权: 北京胜利因子科技有限公司
-
-官网: https://license.aiputing.com
-## 项目状态
-交付发布
 
 
+Next-DBM is a derivative work based on the open-source
+project **Next Terminal**, which is licensed under the
+Apache License, Version 2.0.
+
+Original code and derived portions remain subject to
+the Apache License, Version 2.0.
+
+The project has been significantly modified and extended
+to focus on enterprise database audit and version
+management scenarios.
+
+See the LICENSE file for details.

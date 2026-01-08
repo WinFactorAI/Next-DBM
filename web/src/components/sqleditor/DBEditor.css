@@ -1,0 +1,370 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  overflow: hidden !important;
+}
+
+.cjjWdp {
+  z-index: 0 !important;
+}
+
+.ace_gutter {
+  z-index: 0 !important;
+}
+
+.ace_scrollbar {
+  z-index: 0 !important;
+}
+
+.ace_placeholder {
+  z-index: 0 !important;
+}
+
+/* 设置滚动条的宽度 */
+::-webkit-scrollbar {
+  width: 8px;
+  /* 针对webkit内核的浏览器，如Chrome和Safari */
+  height: 8px;
+}
+
+/* 设置滚动条的高度 */
+::-webkit-scrollbar-thumb {
+  height: 8px;
+  /* 针对webkit内核的浏览器 */
+}
+
+/* 设置滚动条滑块的背景颜色 */
+::-webkit-scrollbar-thumb {
+  background: #cfcfcf;
+  /* 针对webkit内核的浏览器 */
+  border-radius: 6px;
+  /* 圆角滑块 */
+}
+
+/* 设置滚动条滑块的边框 */
+::-webkit-scrollbar-thumb:window-inactive {
+  background: #bebebe;
+  /* 当窗口不活跃时的滑块颜色 */
+}
+
+/* 设置滚动条轨道的背景颜色 */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  /* 针对webkit内核的浏览器 */
+}
+
+/* 设置滚动条轨道的边框半径 */
+::-webkit-scrollbar-track-piece {
+  border-radius: 6px;
+  /* 针对webkit内核的浏览器 */
+}
+
+/* 设置滚动条上按钮的样式 */
+::-webkit-scrollbar-button {
+  display: none;
+  /* 隐藏滚动条按钮 */
+}
+
+/* 例如，为一个特定的div设置滚动条样式 */
+.my-scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.my-scrollbar::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 6px;
+}
+
+.my-scrollbar::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+
+.result-section {
+  /* height: 56.4vh; */
+  /* height: calc(100vh - 43.6vh); */
+}
+
+.left-section {
+  height: 100vh;
+  /* height: calc(100% - 1000px); */
+}
+
+.right-section {
+  height: 100vh;
+  /* height: calc(100% - 1000px); */
+}
+
+.status-bar {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.react-tabs__tab {
+  bottom: 0px !important;
+  display: flex;
+  padding: 4px;
+  border-right: 1px solid #ddd;
+  font-weight: bold;
+  color: #888;
+  display: flex;
+}
+
+/* 设置TabList的直角样式 */
+.react-tabs__tab--selected {
+  border-radius: 0 !important;
+  border-top: 0px solid #DDD !important;
+  border-left: 0px solid #DDD !important;
+  border-right: 0px solid #DDD !important;
+  font-weight: bold;
+  display: flex;
+  padding: 4px;
+}
+
+.react-tabs__tab-list>li:first-child {
+  border-left: 0px solid #DDD !important;
+}
+
+.react-tabs__tab-list {
+  border-bottom: 1px solid #DDD !important;
+  margin: 0px !important;
+}
+
+.border-b-1 {
+  border: 0.1px solid #DDD !important;
+}
+
+.tab-close-btn {
+  height: 15px;
+  margin-top: 5px;
+  /* 设置鼠标指针式按钮*/
+  cursor: pointer;
+}
+
+
+
+/* CSS 文件或 <style> 标签中 */
+.react-tabs__tab-list {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  white-space: nowrap;
+  height: 30px;
+}
+
+.react-tabs__tab--selected {
+  background: rgb(99 102 241) !important;
+  border-color: #aaa;
+  color: #fff !important;
+  cursor: pointer;
+}
+
+.react-tabs__tab--selected:hover {
+  background: rgb(90, 92, 244) !important;
+  border-color: #aaa;
+  color: #fff !important;
+}
+
+.tab-add-btn {
+  margin-top: 6px;
+  margin-right: 6px;
+  /* position: absolute; */
+}
+
+.height200vh {
+  height: calc(200vh - 0px) !important;
+}
+
+.height100vh {
+  height: 100% !important;
+  /* height: calc(200vh - 0px) !important; */
+}
+
+.bg-white {
+  background-color: #fff !important;
+}
+
+/* 您可以将此CSS放入您的样式表中或使用内联样式 */
+.parent-container {
+  display: flex;
+  /* 使用Flexbox布局 */
+  align-items: center;
+  /* 垂直居中对齐子元素 */
+}
+
+.search-bar {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: default;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  min-height: 30px;
+  outline: 0 !important;
+  /* position: relative; */
+  -webkit-transition: all 100ms;
+  transition: all 100ms;
+  background-color: hsl(0, 0%, 100%);
+  border-color: hsl(0, 0%, 80%);
+  border-radius: 0px;
+  border-style: solid;
+  border-width: 1px;
+  box-sizing: border-box;
+  padding: 0px 10px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.search-bar-clear-btn {
+  /* position: absolute; */
+  right: 20px;
+  margin-top: 10px;
+  margin-right: 17px;
+}
+
+.css-13cymwt-control {
+  border-radius: 0px !important;
+}
+
+
+
+.toolbar {
+  position: absolute;
+  width: 100%;
+  height: 40px;
+  background: var(--editor-background-color-bar);
+  z-index: 0.1;
+  border-bottom: 0.1px solid var(--border-input-affix-wrapper);
+}
+
+.main-split-pane {
+  margin-top: 40px;
+  height: calc(100vh - 40px);
+}
+
+
+.tab-left {
+  float: left;
+  border-right: 1px solid #DDD;
+  position: absolute;
+  background-color: white;
+  z-index: 0.1;
+  height: 40px;
+}
+
+.tab-right {
+  border-left: 1px solid #DDD;
+  background-color: white;
+  z-index: 0.1;
+  height: 40px;
+}
+
+.scrollable-div {
+  overflow-y: auto;
+  /* 设置垂直滚动条 */
+  overflow-x: hidden;
+  /* 隐藏水平滚动条 */
+  margin-left: 20px;
+  margin-right: 20px;
+  scroll-behavior: smooth;
+
+}
+
+.scrollable-div::-webkit-scrollbar {
+  width: 10px;
+  /* 设置滚动条宽度 */
+}
+
+.scrollable-div::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  /* 设置滚动条拖动条背景色为透明 */
+}
+
+.scrollable-div::-webkit-scrollbar-track {
+  background-color: transparent;
+  /* 设置滚动条轨道背景色为透明 */
+}
+
+
+.menu-icon {
+  margin-right: 6px;
+}
+
+.menu-icon-empty {
+  width: 20px;
+  margin-right: 6px;
+  color: #fff;
+}
+
+.disable-selection {
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently supported by Chrome and Opera */
+}
+
+
+.ag-root-wrapper.ag-layout-normal {
+  border-radius: 0px;
+  border: 0px;
+}
+
+.ace-sqlserver .ace_comment {
+  color: #aaa;
+}
+
+/* .ag-theme-alpine .ag-root .ag-header-cell-text,
+.ag-theme-alpine .ag-root .ag-cell-value {
+  font-size: 28px !important; 
+  font-weight: bold !important;
+} */
+
+/* 浅色主题 */
+.ag-theme-custom-light {
+  --ag-background-color: #ffffff;
+  --ag-foreground-color: #000000;
+  --ag-header-background-color: #f8f9fa;
+  /* 更多变量... */
+}
+
+/* 深色主题 */
+.ag-theme-custom-dark {
+  --ag-background-color: #1a1a1a;
+  --ag-foreground-color: #ffffff;
+  --ag-header-background-color: #2d2d2d;
+  /* 更多变量... */
+}
+
+/* .ag-theme-custom-dark .ag-dnd-ghost, 
+.ag-theme-custom-dark .ag-root-wrapper, 
+.ag-theme-custom-dark .ag-sticky-bottom, 
+.ag-theme-custom-dark .ag-sticky-top{
+  background-color: var(--editor-background-color);
+  color: var(--text-color);
+} */
+.ag-dnd-ghost,
+.ag-root-wrapper,
+.ag-sticky-bottom,
+.ag-sticky-top {
+  background-color: var(--editor-background-color);
+}

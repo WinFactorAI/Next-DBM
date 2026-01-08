@@ -1,0 +1,80 @@
+
+.tree{
+    width: 100% !important;
+}
+.tree-switcher {
+    position: relative;
+    flex: none;
+    align-self: stretch;
+    width: 24px;
+    margin: 0;
+    line-height: 24px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.3s;
+    border-radius: 6px;
+}
+.tree-switcher-line{
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+.tree-switcher-line:before {
+    position: absolute;
+    top: 0;
+    inset-inline-end: calc(24px / 2);
+    bottom: calc(calc(8px / 2)* -1);
+    margin-inline-start: -1px;
+    border-inline-end: 2px solid #d9d9d9;
+    content: "";
+}
+
+.tree-switcher-line:after {
+    position: absolute;
+    width: calc(calc(24px / 2)* 0.8);
+    height: calc(24px / 2);
+    border-bottom: 2px solid #d9d9d9;
+    content: "";
+}
+ 
+.tree-switcher-leaf-line {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+.tree-switcher-leaf-line:before {
+    position: absolute;
+    top: 0;
+    inset-inline-end: calc(24px / 2);
+    bottom: calc(calc(8px / 2)* -1);
+    margin-inline-start: -1px;
+    border-inline-end: 2px solid #d9d9d9;
+    content: "";
+}
+
+.tree-switcher-leaf-line:after {
+    position: absolute;
+    width: calc(calc(24px / 2)* 0.8);
+    height: calc(24px / 2);
+    border-bottom: 2px solid #d9d9d9;
+    content: "";
+}
+ 
+.tree-switcher-leaf-line:before {
+    top: auto !important;
+    bottom: auto !important;
+    height: calc(24px / 2) !important;
+}
+
+
+.tree-switcher-nowrap {
+    white-space: nowrap; /* 不换行 */
+    overflow: hidden; /* 溢出部分隐藏 */
+    text-overflow: ellipsis; /* 显示省略号 */
+}

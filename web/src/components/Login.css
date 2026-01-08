@@ -1,0 +1,80 @@
+.login-box {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--background-color);
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.login-card-header {
+    text-align: center;
+    margin: 15px auto 30px auto;
+    color: #6366f1 !important;
+}
+
+.login-form {
+    max-width: 300px;
+    min-width: 300px;
+}
+
+.login-form-forgot {
+    float: right;
+}
+
+.login-form-button {
+    width: 100%;
+}
+
+.login-card {
+    position: absolute;
+    left: 75%;
+    top: 50%;
+    margin-left: -175px;
+    margin-top: -189px;
+    background-color: var(--background-color-login) !important;
+}
+
+/* 小屏幕设备（如手机，宽度小于 768px） */
+@media (max-width: 768px) {
+    .login-card {
+        left: 50%;
+        /* 改为水平居中 */
+        top: 40%;
+        /* 稍微靠上，避免被键盘遮挡 */
+        margin-left: -175px;
+        margin-top: -189px;
+    }
+}
+
+.ant-input-prefix .anticon-user {
+    color: var(--text-color);
+}
+
+.anticon-lock {
+    color: var(--text-color);
+}
+
+.ant-input-password-icon.anticon {
+    color: var(--border-input-affix-wrapper);
+}
+
+.login-l1 {
+    position: absolute;
+    left: 25%;
+    top: 39%;
+    width: 6vw;
+    animation: float-up-down 5s ease-in-out infinite;
+    display: none;
+}
+
+
+.login-l2 {
+    position: absolute;
+    left: 25%;
+    top: 51%;
+    width: 6vw;
+    animation: float-up-down 2s ease-in-out infinite;
+    display: none;
+}
