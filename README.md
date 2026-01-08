@@ -97,14 +97,21 @@ Email: business@aiputing.com
 
 Download: <a href="https://f.aiputing.com/?p=Next-DBM%2F" target="_blank" rel="noopener noreferrer">f.aiputing.com/?p=Next-DBM%2F</a>
 
+## 协议与条款
+如您需要在企业网络中使用 Next-DBM，建议先征求 IT 管理员的同意。下载、使用或分发 Next-DBM 前，您必须同意 协议 条款与限制。本项目不提供任何担保，亦不承担任何责任。
+
 ## License
 
-All rights reserved  
 
-Copyright: Beijing Shengli Yinzi Technology Co., Ltd.  
+Next-DBM is a derivative work based on the open-source
+project **Next Terminal**, which is licensed under the
+Apache License, Version 2.0.
 
-Website: <a href="https://license.aiputing.com" target="_blank" rel="noopener noreferrer">license.aiputing.com</a>  
+Original code and derived portions remain subject to
+the Apache License, Version 2.0.
 
-## Project Status
+The project has been significantly modified and extended
+to focus on enterprise database audit and version
+management scenarios.
 
-ReleasedThis is an automated change - 2026-01-07 07:34:10
+See the LICENSE file for details.This is an automated change - 2026-01-08 12:22:39

@@ -1,0 +1,244 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  /* overflow: hidden; */
+  height: calc(100vh - 80px)
+}
+
+.GitGraph .app-box{
+  /*调整model模式高度  */
+  /* height: calc(100vh - 40px); */
+  height: calc(100vh - 55px);
+  overflow: hidden;
+}
+.GitGraph .gitTable{
+  font-size:'12px';
+  border:'0px';
+  border-spacing:'0px';
+  width: 100%;
+}
+.GitGraph #gitGraph{
+  position: absolute;
+  left: 0px;
+  margin-top: -50px;
+}
+.GitGraph .lien-head {
+  user-select: none;
+  border-bottom: 1px solid var(--border-input-affix-wrapper);
+  border-top: 1px solid var(--border-input-affix-wrapper);
+}
+.GitGraph .no-click {
+  pointer-events: none;
+}
+.GitGraph .lien {
+  height: 40px;
+  white-space: nowrap;        /* 禁止换行 */
+  overflow: hidden;           /* 超出部分隐藏 */
+  text-overflow: ellipsis;    /* 显示省略号 */
+  font-size: 14px;
+}
+
+.GitGraph .lien:hover {
+  /* background-color: #33aaff; */
+  /* background-color: hsla(237, 67%, 55%, 0.2); */
+}
+
+.GitGraph .lien:active {
+  /* background-color: hsla(237, 67%, 55%, 0.2); */
+  border-radius: 5px;
+}
+.GitGraph .lien-td {
+  padding:0;
+  padding-left: 10px;
+}
+.GitGraph .lien-td-icon {
+  text-align: right;
+  padding-right: 5px;
+  font-size: 18px;
+}
+.GitGraph .avatar{
+  width: 28px;
+  border-radius: 50%;
+  margin-top: 6px;
+}
+
+/* CSS */
+.GitGraph .active-row {
+  background-color: hsla(237, 67%, 55%, 0.2);/* 设置激活行的背景颜色 */
+  color: #ffffff !important; /* 设置激活行的文字颜色 */
+}
+
+/* 设置单元格边框为透明 */
+.GitGraph table {
+  border-collapse: collapse;
+  cursor: default;
+}
+
+.GitGraph .ant-form-item {
+  /* margin-bottom: 0; */
+}
+.GitGraph .ant-modal-body {
+  padding: 10px 24px;
+}
+
+/* 设置滚动条的宽度 */
+::-webkit-scrollbar {
+  width: 8px; /* 针对webkit内核的浏览器，如Chrome和Safari */
+  height: 8px;
+}
+
+/* 设置滚动条的高度 */
+::-webkit-scrollbar-thumb {
+  height: 8px; /* 针对webkit内核的浏览器 */
+}
+
+/* 设置滚动条滑块的背景颜色 */
+::-webkit-scrollbar-thumb {
+  background: #cfcfcf; /* 针对webkit内核的浏览器 */
+  border-radius: 6px; /* 圆角滑块 */
+}
+  
+/* 设置滚动条滑块的边框 */
+::-webkit-scrollbar-thumb:window-inactive {
+  background: #bebebe; /* 当窗口不活跃时的滑块颜色 */
+}
+
+  /* 设置滚动条轨道的背景颜色 */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* 针对webkit内核的浏览器 */
+}
+  
+/* 设置滚动条轨道的边框半径 */
+::-webkit-scrollbar-track-piece {
+  border-radius: 6px; /* 针对webkit内核的浏览器 */
+}
+
+  /* 设置滚动条上按钮的样式 */
+::-webkit-scrollbar-button {
+  display: none; /* 隐藏滚动条按钮 */
+}
+
+
+
+
+.circle {
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background-color: red;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* 添加动画属性 */
+  animation: expand 2s ease-out infinite;
+}
+
+@keyframes expand {
+  0% {
+      width: 0;
+      height: 0;
+      opacity: 1;
+  }
+  100% {
+      width: 20px;
+      height: 20px;
+      opacity: 0;
+  }
+}
+
+.ant-collapse > .ant-collapse-item > .ant-collapse-header{
+  padding: 4px !important;
+}
+.ant-collapse-content > .ant-collapse-content-box {
+  padding: 4px !important;
+}
+.ant-collapse > .ant-collapse-item > .ant-collapse-header .ant-collapse-arrow{
+  vertical-align: 2px !important;
+}
+
+thead {
+  position: sticky;  
+  top: 0;  
+  background-color: white;  
+  z-index: 1;  
+  transform: translateY(-1px);
+}
+/* 伪元素 */
+thead::after {
+  content: ""; /* 必须设置 content */
+  position: absolute; /* 绝对定位 */
+  left: 0; /* 左侧位置 */
+  right: 0; /* 右侧位置 */
+  bottom: 0px; /* 底部位置，设置为 -1px 以确保位于表头下方 */
+  border-bottom: 0.1px solid var(--border-input-affix-wrapper);
+  /* height: 0.1px;  */
+ 
+  z-index: 0; /* 确保伪元素在表头下方 */
+}
+
+.git-view-file-bar{
+  display:flex;
+  justify-content: space-between;
+  width: 100% ;
+  padding: 5px 10px;
+  border-bottom: 0.1px solid var(--border-input-affix-wrapper);
+  flex-wrap: wrap;
+}
+.git-view-file-list-item {
+  margin: 5px;
+}
+
+.height100vh1{
+  height: 100vh;
+  overflow: hidden;
+}
+
+.top-bar-box{
+  width: 100%;
+  padding:5px;
+  padding-left:10px;
+  border-bottom: 0.1px solid var(--border-input-affix-wrapper);
+  flex-wrap: wrap;
+}
+.git-box{
+  height: calc(100vh + 100px);
+  overflow-y: auto; 
+  margin-bottom: 4px;
+  /* border: 1px solid #ccc;  */
+}
+
+.ant-space-vertical{
+  /* gap: 0px !important; */
+  background-color: white;
+  z-index: 1000;
+}
+.change-view{
+  position: relative;
+  z-index: 99;
+  background-color: white;
+}
+
+.gitContainer {
+  position: relative; /* 设置定位上下文 */
+  width: 100%;
+}
+.gitContainer .ant-space-item {
+  width: 100%;
+}
+
+.gitGraph {
+  position: absolute; /* 绝对定位 */
+ 
+}
+
+.gitTable {
+  position: relative; /* 相对定位 */
+ 
+}
+

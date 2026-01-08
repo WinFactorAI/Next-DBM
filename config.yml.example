@@ -1,0 +1,25 @@
+debug: false
+db: sqlite
+mysql:
+  hostname: localhost
+  port: 3306
+  username: next-dbm
+  password: next-dbm
+  database: next-dbm
+sqlite:
+  file: './data/sqlite/next-dbm.db'
+server:
+  addr: 0.0.0.0:8088
+guacd:
+  hostname: 127.0.0.1
+  port: 4822
+  # 此路径需要为绝对路径，并且next-dbm和guacd都能访问到
+  recording: '/usr/local/next-dbm/data/recording'
+  # 此路径需要为绝对路径，并且next-dbm和guacd都能访问到
+  drive: '/usr/local/next-dbm/data/drive'
+
+sshd:
+  enable: true
+  addr: 0.0.0.0:2022
+  key: ~/.ssh/id_rsa
+  authorized-keys: ~/.ssh/authorized_keys

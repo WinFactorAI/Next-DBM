@@ -1,0 +1,198 @@
+/* 默认主题 */
+:root {
+--primary-color: #1890ff;
+--background-color: #ffffff;
+--text-color: #000000;
+--background-color-layout: #f0f2f5;
+--text-color-breadcrumb: #00000073;
+--text-color-breadcrumb-li:#000000d9;
+--border-color:#f0f0f0;
+--background-layout-sider-trigger: #6366f1;
+--background-layout-sider:#433bbb;
+--background-menu-sub: #4f46e5;
+--menu-item-selected-background: #6366f1;
+--border-input-affix-wrapper: #d9d9d9;
+
+--background-select-item-option-active:#f5f5f5;
+--background-select-item-option-selected:#6366f1;
+
+--color-select-clear:#00000040;
+--background-dropdown-menu-item:#f5f5f5f5;
+--color-pro-table-list-toolbar-setting-item:#000000bf;
+--border-color-modal-content: #f0f0f0;
+
+--text-color-header: #ffffff;
+--background-modal: #ffffff;
+--text-color-pagination-disabled: #00000040;
+--background-color-login:#FFFFFF;
+
+--box-shadow:  rgba(0, 0, 0, 0.15);
+--table-cell-row-hover-background: #fafafa;
+--table-tbody-tr-td-border:#f0f0f0;
+--table-thead-tr-th-background:#fafafa;
+
+--credential-list-background:#ffffff;
+
+--checkbox-inner-background: #4f46e5;
+--border-input-affix-wrapper-hover: #f0f0f0;
+
+--border-btn-affix-wrapper: #6366f1;
+
+--text-color-disabled: #00000040;
+--btn-background-color-disabled: #f5f5f5;
+--border-input-affix-wrapper-disabled:#d9d9d9;
+
+--dropdown-menu-box-shadow1: #00000006;
+--dropdown-menu-box-shadow2: #00000006;
+--dropdown-menu-box-shadow3: #00000006;
+
+--tree-background-color: #f0f2f5;
+--tree-background-color-treenode: #f5f5f5;
+
+--formList-box:#d9d9d9;
+
+--editor-background-color: #f5f5f5;
+--editor-background-color-bar: #e5e5e5;
+--editor-list-item-background-color:#ececec;
+
+--dbm-ag-background-color: #fff;
+--dbm-ag-border-color: #f4f4f45f; 
+--dbm-ag-row: #ffffff;
+
+--background-color-loading: rgba(255, 255, 255, 0.8);
+}
+
+[data-theme='light'] {
+--primary-color: #177ddc;
+--background-color: #ffffff;
+--text-color: #000000;
+--background-color-layout: #f0f2f5;
+--text-color-breadcrumb: #00000073;
+--text-color-breadcrumb-li:#000000d9;
+--border-color:#f0f0f0;
+--background-layout-sider-trigger: #6366f1;
+--background-layout-sider:#433bbb;
+--background-menu-sub: #4f46e5;
+--menu-item-selected-background: #6366f1;
+--border-input-affix-wrapper: #d9d9d9;
+--background-select-item-option-active:#f5f5f5;
+--background-select-item-option-selected:#6366f1;
+
+--color-select-clear:#00000040;
+--background-dropdown-menu-item:#f5f5f5f5;
+--color-pro-table-list-toolbar-setting-item:#000000bf;
+--border-color-modal-content: #f0f0f0;
+
+--text-color-header: #000000;
+--background-modal: #ffffff;
+--text-color-pagination-disabled: #00000040;
+
+--background-color-login:#FFFFFF;
+
+--box-shadow: rgba(0, 0, 0, 0.15);
+--table-cell-row-hover-background: #fafafa;
+--table-tbody-tr-td-border:#f0f0f0;
+--table-thead-tr-th-background:#fafafa;
+--credential-list-background:#ffffff;
+
+--checkbox-inner-background: #4f46e5;
+
+--border-input-affix-wrapper-hover: #f0f0f0;
+
+--border-btn-affix-wrapper: #6366f1;
+
+--text-color-disabled: #00000040;
+--btn-background-color-disabled: #f5f5f5;
+--border-input-affix-wrapper-disabled:#d9d9d9;
+
+--dropdown-menu-box-shadow1: #0000000d;
+--dropdown-menu-box-shadow2: #0000000d;
+--dropdown-menu-box-shadow3: #0000000d;
+
+
+--tree-background-color: #f0f2f5;
+--tree-background-color-treenode:#d9d9d9;
+
+--formList-box: #d9d9d9;
+
+--editor-background-color: #f5f5f5;
+--editor-background-color-bar: #f4f4f4;
+--editor-list-item-background-color:#ececec;
+
+--dbm-ag-background-color: #fff;
+
+--dbm-ag-border-color: #f4f4f45f; 
+--dbm-ag-row: #ffffff;
+
+--background-color-loading: rgba(255, 255, 255, 0.8);
+}
+
+/* 暗色主题 */
+[data-theme='dark'] {
+--primary-color: #177ddc;
+--background-color: #000000;
+--text-color: #ffffff;
+--background-color-layout: #141414;
+--text-color-breadcrumb: #FFFFFF73;
+--text-color-breadcrumb-li:#FFFFFFd9;
+--border-color:#0f0f0f;
+--background-layout-sider-trigger: #000000;
+--background-layout-sider: #000000;
+--background-menu-sub: #000000;
+--menu-item-selected-background: #343434;
+--border-input-affix-wrapper: #343434;
+--background-select-item-option-active:#050505;
+--background-select-item-option-selected:#141414;
+--color-select-clear:#ffffff4f;
+--background-dropdown-menu-item:#141414;
+--color-pro-table-list-toolbar-setting-item:#ffffffbf;
+--border-color-modal-content:#000000;
+--text-color-header: #ffffff;
+--background-modal: #141414;
+--text-color-pagination-disabled: #ffffff40;
+
+--background-color-login: #141414;
+
+--box-shadow: rgba(98, 98, 98, 0.15);
+--btn-text-color: #ffffff;
+--btn-background-color: #000000;
+
+--table-cell-row-hover-background: #141414;
+--table-tbody-tr-td-border:#343434;
+--table-thead-tr-th-background:#050505;
+--credential-list-background:#141414;
+
+--checkbox-inner-background: #000000;
+
+--border-input-affix-wrapper-hover: #343434;
+
+--border-btn-affix-wrapper: #343434;
+
+--text-color-disabled: #ffffffbf;  
+--btn-background-color-disabled: #1a1a1a;  
+--border-input-affix-wrapper-disabled: #262626;  
+
+
+
+--dropdown-menu-box-shadow1: #ffffff0d;
+--dropdown-menu-box-shadow2: #ffffff0d;
+--dropdown-menu-box-shadow3: #ffffff0d;
+
+--tree-background-color: #141414;
+--tree-background-color-treenode:#343434;
+
+--formList-box: #343434;
+--editor-background-color: #2e2e2e;
+--editor-background-color-bar: #1e1e1e;
+--editor-list-item-background-color:#1c1c1c;
+
+--dbm-ag-background-color: #2e2e2e;
+
+--dbm-ag-border-color: #0f0f0f; 
+
+--dbm-ag-row: #343434;
+
+
+--background-color-loading: rgba(0, 0, 0, 0.8);
+
+}

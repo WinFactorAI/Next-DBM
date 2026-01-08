@@ -1,0 +1,77 @@
+/* MenuItem.css */
+.menu-item {
+    display: inline-block; /* 使用 Flexbox 布局 */
+    position: relative; /* 相对定位 */
+}
+  
+.menu-item-title {
+    cursor: pointer;
+    padding: 4px;
+    font-size: 14px;
+    background:var(--editor-background-color);
+}
+.menu-item-title:hover {
+    background-color: var(--editor-background-color-bar)
+}
+
+.sub-menu {
+    font-size: 14px;
+    display: flex; /* 使用 Flexbox 布局 */
+    flex-direction: column; /* 垂直排列 */
+    position: absolute; /* 绝对定位 */
+    top: 100%; /* 相对于父元素底部 */
+    left: 0; /* 相对于父元素左边 */
+    z-index: 1; /* 提升层级，使其在上方 */
+    background-color: var(--background-color);
+    border: 0.2px solid var(--border-input-affix-wrapper);
+    /* border-radius: 5px; */
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
+}
+
+.sub-menu-item {
+    cursor: pointer;
+    padding: 5px 12px;
+    /* padding-right: 0px; */
+    width: 140px;
+    border-bottom: 0.1px solid #DDD;
+    display: flex;
+    align-items: center; /* 垂直居中 */
+}
+.sub-menu-item-right{
+    position: absolute;
+    right: 10px;
+    float: right;
+    font-size: 12px;
+    color: #999999;
+}
+.sub-menu-item:hover {
+    background-color: #f5f5f5; /* 鼠标悬停时的背景色 */
+}
+.sub-menu-item:last-child {
+    /* border-bottom: none; */
+     /* 去除最后一个子菜单项的底部边框 */
+}
+
+.sub-menu-item-box{
+    height: 34px;
+}
+
+.menu-icon-keyboard{
+    position: absolute;
+    right: 10px;
+    color: #999999;
+}
+
+.menu-right-box{
+    float: right;
+    height: 30px;
+    line-height: 30px;
+    cursor: pointer;
+    align-items: center;
+    cursor: pointer;
+    display: inline-flex;
+    padding: 0 8px;
+}
+.menu-right-box .avatar{
+    width:26px
+}
