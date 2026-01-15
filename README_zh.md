@@ -81,11 +81,6 @@ Next-DBM 企业轻量级数据库审计版本管理系统
 
 邮件: business@aiputing.com
 
-## 发展路线
-
-
-## 下载地址
-下载地址:https://f.aiputing.com/?p=Next-DBM%2F
 
 ## 协议与条款
 如您需要在企业网络中使用 Next-DBM，建议先征求 IT 管理员的同意。下载、使用或分发 Next-DBM 前，您必须同意 协议 条款与限制。本项目不提供任何担保，亦不承担任何责任。

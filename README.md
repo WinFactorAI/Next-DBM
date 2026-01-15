@@ -93,10 +93,7 @@ WeChat Group: <br/>
 
 Email: business@aiputing.com
 
-## Download Link
-
-Download: <a href="https://f.aiputing.com/?p=Next-DBM%2F" target="_blank" rel="noopener noreferrer">f.aiputing.com/?p=Next-DBM%2F</a>
-
+ 
 ## 协议与条款
 如您需要在企业网络中使用 Next-DBM，建议先征求 IT 管理员的同意。下载、使用或分发 Next-DBM 前，您必须同意 协议 条款与限制。本项目不提供任何担保，亦不承担任何责任。
 
