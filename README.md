@@ -120,10 +120,7 @@ Plug in an OpenAI-compatible provider such as DeepSeek, describe what you need i
 
 The open-source core of Next-DBM is licensed under the [Apache License 2.0](LICENSE). Enterprise features and commercial licensing are available via the official website: <https://next-dbm.aiputing.com>.
 
-Next-DBM is a derivative work of the open-source project [Next Terminal](https://github.com/dushixiang/next-terminal) (Apache-2.0), significantly modified and extended for enterprise database audit and version management.
-
-If you plan to deploy Next-DBM inside a corporate network, get your IT / security team's approval first. The software is provided as-is, without warranty of any kind.
-
+ 
 ---
 
 ## 📸 Screenshot TODO

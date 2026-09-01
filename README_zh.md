@@ -120,18 +120,6 @@ DBA 和开发通过内置代理连库，直接在浏览器里干活，不用装�
 
 Next-DBM 开源核心遵循 Apache License 2.0。企业功能与商业授权请访问官网：<https://next-dbm.aiputing.com>。
 
-Next-DBM is a derivative work based on the open-source
-project **Next Terminal**, which is licensed under the
-Apache License, Version 2.0.
-
-Original code and derived portions remain subject to
-the Apache License, Version 2.0.
-
-The project has been significantly modified and extended
-to focus on enterprise database audit and version
-management scenarios.
-
-See the LICENSE file for details.
 
 ---
 
