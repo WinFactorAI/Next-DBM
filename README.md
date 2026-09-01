@@ -133,3 +133,4 @@ The open-source core of Next-DBM is licensed under the [Apache License 2.0](LICE
 - [ ] The Actions badge assumes a `ci.yml` workflow — verify the filename once CI is enabled
 - [ ] Replace the website link in License with the direct licensing page once it's ready
 - [ ] If a fixed demo account (e.g. test / test) is desired, create it and update the Live Demo section
+This is an automated change - 2026-09-01 09:55:39
