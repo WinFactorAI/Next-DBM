@@ -111,8 +111,6 @@ DBA 和开发通过内置代理连库，直接在浏览器里干活，不用装�
 - 📖 文档：<https://doc.aiputing.com/dbm>
 - 🌐 官网：<https://next-dbm.aiputing.com>
 - 💬 微信群：扫描下方二维码
-- 🐧 QQ 群：938145268
-- ✈️ Telegram：<https://t.me/next_dbm>
 
 <img src="./img/weixinq-1.jpg" width="240" alt="Next-DBM 微信群二维码" />
 

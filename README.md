@@ -111,8 +111,6 @@ Plug in an OpenAI-compatible provider such as DeepSeek, describe what you need i
 - 📖 Documentation: <https://doc.aiputing.com/dbm>
 - 🌐 Official website: <https://next-dbm.aiputing.com>
 - 💬 WeChat group: scan the QR code below
-- 🐧 QQ group: 938145268
-- ✈️ Telegram: <https://t.me/next_dbm>
 
 <img src="./img/weixinq-1.jpg" width="240" alt="Next-DBM WeChat group" />
 
