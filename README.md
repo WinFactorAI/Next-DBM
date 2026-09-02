@@ -1,136 +1,117 @@
-# Next-DBM
 
-**Every connection and every SQL statement is audited. Database changes get versions, approvals and one-click rollback — just like code. And AI helps you write SQL.**
 
-A lightweight enterprise database audit system — a bastion host for your databases.
+# Next-DBM Database Audit System
 
-[![Actions](https://img.shields.io/github/actions/workflow/status/WinFactorAI/Next-DBM/ci.yml?branch=main&label=Actions&style=flat-square)](https://github.com/WinFactorAI/Next-DBM/actions)
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue?style=flat-square)](LICENSE)
-[![Docs](https://img.shields.io/badge/Docs-doc.aiputing.com%2Fdbm-2E8B57?style=flat-square)](https://doc.aiputing.com/dbm)
-[![Live Demo](https://img.shields.io/badge/Demo-nddemo.aiputing.com-7B2FBE?style=flat-square)](http://nddemo.aiputing.com)
+[English](README.md) ｜ [中文](README_zh.md)
 
-**English** ｜ [**中文**](README_zh.md)
+Next-DBM is a lightweight enterprise database audit and version management system.  
+It supports database connection log auditing, unified proxy permission management, data versioning, automated database script deployment, and basic database management through a web interface.
 
----
+## Project Description
 
-## ✨ Feature Overview
+Next-DBM solves challenges in iterative database development, including audit management, version control, automated script deployment, and basic database management via the web.
+:::info{title=Demo Link}
+Demo: <a href="http://nddemo.aiputing.com/#/login" target="_blank" rel="noopener noreferrer">Click to try</a><br/>
+<img src="https://www.aiputing.com/assets/img/winFactor.jpg" width="200" style="border: 0px;">
+<br/>
+Follow our official WeChat account and reply with "nd" to receive a demo account.<br/>
+:::
+![Logo](https://f.aiputing.com/raw/static/Next-DBM/dev.png)
 
-<!-- TODO(gif): add img/demo-overview.gif here — a ≤15s full-flow demo: login → connect a database via the proxy → run SQL in the web editor → check the audit log → rollback a version -->
+### 1. Multiple Databases  
+Supports connecting to multiple types of databases using the proxy. Compatible with MySQL, MariaDB, Oracle, SQLServer, PostgreSQL, MongoDB, Redis, and more.
 
-<table>
-<tr>
-<th width="33%" align="left">🛡️ Database Audit</th>
-<th width="33%" align="left">🌿 Version Management</th>
-<th width="33%" align="left">🤖 AI Assistance</th>
-</tr>
-<tr>
-<td valign="top">
+### 2. Web Management  
+Manage databases through the web interface.  
+Supports TCP proxy connections, connection status monitoring, and audit management commands.
 
-- Full SQL auditing & traceability — every statement tied to a user, an asset and a session
-- Live session monitoring, force disconnect
-- Offline session replay (screen recording)
-- Sensitive command filtering, with rules per user or group
-- Approval workflow for high-risk operations
-- Webhook notifications: DingTalk, WeCom, Feishu
+![Logo](https://f.aiputing.com/raw/static/Next-DBM/agent.png)
 
-</td>
-<td valign="top">
+### 3. Database Version Management <Badge type="success">Core</Badge>    
+Save SQL statements as files and manage them via Git. Key table structures and data are version-controlled on the server.
 
-- Git-style database versioning — change SQL saved as versioned files
-- History restore — rebuild schema & data from any version
-- One-click rollback
-- DevOps integration: Jenkins / Jira / GitLab / GitHub, from trigger to approval to execution
+### 4. Database Synchronization <Badge type="success">Core</Badge>    
+Restore databases from historical versions. Supports restoring to new or existing databases.
 
-</td>
-<td valign="top">
+### 5. Sensitive Command Filtering <Badge type="warning">Highlight</Badge>    
+Define custom sensitive rules to control commands per user or group.
 
-- AI-written SQL via OpenAI-compatible providers (DeepSeek, etc.)
-- Web SQL editor — write and run queries in the browser
-- AI-generated SQL still goes through the same audit pipeline and sensitive-command rules
+### 6. Command Version Build <Badge type="warning">Highlight</Badge>    
+Trigger commands to manage version backups, e.g., ALTER, INSERT, UPDATE, DELETE commands.
 
-</td>
-</tr>
-</table>
+### 7. Historical Version Control <Badge type="warning">Highlight</Badge>     
+Filter versions by table structure and data to manage historical backups.
 
-All databases below are reached through the built-in proxy — you work directly in the browser, no database client to install:
+### 8. Unified Identity Management <Badge type="success">Core</Badge>   
+LDAP/AD integration: synchronize organizational structure and roles.  
+RBAC permissions: fine-grained control at file-level, edit, and sharing permissions.
 
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?logo=mysql&logoColor=white&style=flat-square)
-![MariaDB](https://img.shields.io/badge/MariaDB-003545?logo=mariadb&logoColor=white&style=flat-square)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?logo=postgresql&logoColor=white&style=flat-square)
-![Oracle](https://img.shields.io/badge/Oracle-C74634?style=flat-square)
-![SQL Server](https://img.shields.io/badge/SQL%20Server-CC2927?style=flat-square)
-![MongoDB](https://img.shields.io/badge/MongoDB-47A248?logo=mongodb&logoColor=white&style=flat-square)
-![Redis](https://img.shields.io/badge/Redis-FF4438?logo=redis&logoColor=white&style=flat-square)
-![GaussDB](https://img.shields.io/badge/GaussDB-2F6BFF?style=flat-square)
-![TDengine](https://img.shields.io/badge/TDengine-009FB7?style=flat-square)
+### 9. Proxy Service Management <Badge type="success">Core</Badge>   
+Control and manage proxies for different database ports.
 
-Also on board: LDAP/AD unified identity · RBAC · two-factor authentication · login policies · scheduled tasks · batch execution · export · system monitoring · multi-language UI · dark theme.
+### 10. Push Notifications <Badge type="warning">Highlight</Badge>
+Supports webhook notifications for database assets, disconnections, and user-asset relationship triggers.  
+Compatible with DingTalk, WeChat Work, Feishu, and other platforms.
 
-## 🚀 Quick Start in 5 Minutes
+### 11. Log Auditing <Badge type="success">Core</Badge>
+Audit database connection logs and user-asset interactions.  
+Supports full SQL execution logging and status auditing.
 
-```bash
-git clone https://github.com/WinFactorAI/Next-DBM.git
-cd Next-DBM
-docker compose -f demos/docker-compose.yml up -d
-```
+### 12. Data Permission Management <Badge type="success">Core</Badge>
+Manage data permissions based on user-asset relationships.
 
-Open `http://localhost:8088` (or whichever port `demos/docker-compose.yml` maps) and log in with the default account **admin / admin**. Since this is a bastion system, your first move after login should be changing that default password.
+### 13. Connection Monitoring <Badge type="success">Core</Badge>
+Monitor connections per user-asset relationship. Track user actions on assets.
 
-For production deployment (HTTPS, external MySQL, etc.), see the [documentation](https://doc.aiputing.com/dbm).
+### 14. Additional Features <Badge>Basic</Badge>  
+Multi-language support, theme switching, default Chinese and English support, and custom language import.  
+Log cleaning cycles.  
+System backup and restore settings.
 
-## 🎮 Live Demo
+## Interface Screenshots
 
-Open <http://nddemo.aiputing.com> in your browser. To get a demo account, follow our WeChat official account (QR code below) and reply "nd".
+![Logo](https://f.aiputing.com/raw/static/Next-DBM/1.png)  
 
-<img src="https://www.aiputing.com/assets/img/winFactor.jpg" width="180" alt="WeChat official account QR code — reply 'nd' for a demo account" />
+![Logo](https://f.aiputing.com/raw/static/Next-DBM/5.1.png) 
+![Logo](https://f.aiputing.com/raw/static/Next-DBM/5.2.png) 
+![Logo](https://f.aiputing.com/raw/static/Next-DBM/5.3.png) 
+![Logo](https://f.aiputing.com/raw/static/Next-DBM/5.4.png) 
+![Logo](https://f.aiputing.com/raw/static/Next-DBM/2.png)  
+![Logo](https://f.aiputing.com/raw/static/Next-DBM/3.png)  
+![Logo](https://f.aiputing.com/raw/static/Next-DBM/4.png)  
+![Logo](https://f.aiputing.com/raw/static/Next-DBM/5.png)  
+![Logo](https://f.aiputing.com/raw/static/Next-DBM/6.png)  
+![Logo](https://f.aiputing.com/raw/static/Next-DBM/7.png)  
+![Logo](https://f.aiputing.com/raw/static/Next-DBM/8.png)
 
-The demo environment is reset periodically — don't put real data in it.
+## Support Channels
 
-## Core Scenarios
+WeChat Group: <br/>
+<img src="./img/weixinq-1.jpg" width="30%" style="border: 0px;">
+<!-- QQ Group: <br/>
+<img src="https://license.aiputing.com/static/media/qq-next-dbm.452f09681876a5433557.jpg" width="30%" style="border: 0px;"> -->
 
-### 1. Daily operations, fully audited
+Email: business@aiputing.com
 
-DBAs and developers connect through the built-in proxy and work in the browser — nothing to install. Every SQL statement is recorded; sensitive commands are filtered by rule; a suspicious live session can be force-disconnected on the spot; offline screen recordings keep after-the-fact investigation grounded in evidence.
+## Download Link
 
-<!-- TODO(screenshot): add img/scenario-audit.png here — session monitoring + SQL audit list + offline replay -->
+Download: <a href="https://f.aiputing.com/?p=Next-DBM%2F" target="_blank" rel="noopener noreferrer">f.aiputing.com/?p=Next-DBM%2F</a>
 
-### 2. Ship database changes like code
-
-Change SQL is saved as versioned files. High-risk changes go through approval first, and Jenkins / Jira / GitLab / GitHub can drive the whole flow: trigger → approve → execute. When a change goes wrong, roll the database back to any historical version with one click.
-
-<!-- TODO(screenshot): add img/scenario-version.png here — version list + approval dialog + one-click rollback -->
-
-### 3. Let AI write the SQL
-
-Plug in an OpenAI-compatible provider such as DeepSeek, describe what you need in the Web SQL editor, and get SQL that's ready to run. Execution still passes through auditing and sensitive-command filtering — convenience doesn't buy an exemption.
-
-<!-- TODO(screenshot): add img/scenario-ai.png here — AI SQL editor in action -->
-
-## Docs & Community
-
-- 📖 Documentation: <https://doc.aiputing.com/dbm>
-- 🌐 Official website: <https://next-dbm.aiputing.com>
-- 💬 WeChat group: scan the QR code below
-
-<img src="./img/weixinq-1.jpg" width="240" alt="Next-DBM WeChat group" />
+## 协议与条款
+如您需要在企业网络中使用 Next-DBM，建议先征求 IT 管理员的同意。下载、使用或分发 Next-DBM 前，您必须同意 协议 条款与限制。本项目不提供任何担保，亦不承担任何责任。
 
 ## License
 
-The open-source core of Next-DBM is licensed under the [Apache License 2.0](LICENSE). Enterprise features and commercial licensing are available via the official website: <https://next-dbm.aiputing.com>.
 
- 
----
+Next-DBM is a derivative work based on the open-source
+project **Next Terminal**, which is licensed under the
+Apache License, Version 2.0.
 
-## 📸 Screenshot TODO
+Original code and derived portions remain subject to
+the Apache License, Version 2.0.
 
-> Remove this section once the assets are in place.
+The project has been significantly modified and extended
+to focus on enterprise database audit and version
+management scenarios.
 
-- [ ] Overview GIF: `img/demo-overview.gif` (≤ 15s: login → connect a database via the proxy → run SQL in the web editor → check the audit log → rollback a version)
-- [ ] Scenario 1 screenshot: `img/scenario-audit.png` (session monitoring + SQL audit list + offline replay)
-- [ ] Scenario 2 screenshot: `img/scenario-version.png` (version list + approval + one-click rollback)
-- [ ] Scenario 3 screenshot: `img/scenario-ai.png` (AI SQL editor)
-- [ ] Commit `demos/docker-compose.yml` (referenced by the quick-start command; not in the repo yet)
-- [ ] The Actions badge assumes a `ci.yml` workflow — verify the filename once CI is enabled
-- [ ] Replace the website link in License with the direct licensing page once it's ready
-- [ ] If a fixed demo account (e.g. test / test) is desired, create it and update the Live Demo section
-This is an automated change - 2026-09-01 09:55:39
+See the LICENSE file for details.This is an automated change - 2026-09-02 19:07:39
