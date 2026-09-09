@@ -146,13 +146,13 @@ const Term = () => {
         let token = getToken();
         let params = {
             'cols': term.cols,
-            'rows': term.rows,
-            'X-Auth-Token': token
+            'rows': term.rows
         };
 
         let paramStr = qs.stringify(params);
 
-        let webSocket = new WebSocket(`${wsServer}/sessions/${sessionId}/ssh?${paramStr}`);
+        // 认证令牌通过 WebSocket 子协议传递，避免出现在 URL 查询参数中被日志、代理或浏览器历史记录泄露
+        let webSocket = new WebSocket(`${wsServer}/sessions/${sessionId}/ssh?${paramStr}`, [token]);
 
         let pingInterval;
         webSocket.onopen = (e => {
