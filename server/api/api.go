@@ -38,6 +38,9 @@ func GetToken(c echo.Context) string {
 	if len(token) > 0 {
 		return token
 	}
+	if token = c.Request().Header.Get("Sec-WebSocket-Protocol"); len(token) > 0 {
+		return token
+	}
 	return c.QueryParam(nd.Token)
 }
 
