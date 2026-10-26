@@ -376,13 +376,13 @@ func RowsToInsertStatements(rows *sql.Rows, tableName string) (string, error) {
 		var rowValues []string
 		for _, val := range values {
 			if b, ok := val.([]byte); ok {
-				rowValues = append(rowValues, fmt.Sprintf("'%s'", string(b)))
+				rowValues = append(rowValues, fmt.Sprintf("'%s'", escapeSQLValue(string(b))))
 			} else if s, ok := val.(string); ok {
-				rowValues = append(rowValues, fmt.Sprintf("'%s'", s))
+				rowValues = append(rowValues, fmt.Sprintf("'%s'", escapeSQLValue(s)))
 			} else if val == nil {
 				rowValues = append(rowValues, "NULL")
 			} else {
-				rowValues = append(rowValues, fmt.Sprintf("'%v'", val))
+				rowValues = append(rowValues, fmt.Sprintf("'%v'", escapeSQLValue(fmt.Sprintf("%v", val))))
 			}
 		}
 
